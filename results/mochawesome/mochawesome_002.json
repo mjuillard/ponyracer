@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-06-08T15:41:53.464Z",
+    "end": "2023-06-08T15:41:54.757Z",
+    "duration": 1293,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "029294db-4c55-49ad-a882-609b5fcec1cd",
+      "title": "",
+      "fullFile": "cypress\\e2e\\races.cy.ts",
+      "file": "cypress\\e2e\\races.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b8b587dc-19d3-4052-b256-9dd4c18f04df",
+          "title": "Races",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display a race list",
+              "fullTitle": "Races should display a race list",
+              "timedOut": null,
+              "duration": 303,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/races');\n// loading\ncy.contains('div', 'Loading...');\ncy.wait('@getRaces');\ncy.get('h2').should('have.length', 2);\ncy.get('p').should('have.length', 2).and('contain', 'ago');\ncy.get('div.alert').should('not.exist');",
+              "err": {},
+              "uuid": "02c72e78-7e8d-454b-abae-70c6f7575505",
+              "parentUUID": "b8b587dc-19d3-4052-b256-9dd4c18f04df",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display a loading error",
+              "fullTitle": "Races should display a loading error",
+              "timedOut": null,
+              "duration": 677,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// override the response to have an error\ncy.intercept('GET', 'api/races?status=PENDING', {\n    statusCode: 404,\n    delay: 500\n}).as('getRacesError');\ncy.visit('/races');\n// loading\ncy.contains('div', 'Loading...');\ncy.wait('@getRacesError');\ncy.contains('div.alert', 'An error occurred while loading');",
+              "err": {},
+              "uuid": "41563fd2-16c5-469f-b3fe-e68627ca5aa1",
+              "parentUUID": "b8b587dc-19d3-4052-b256-9dd4c18f04df",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display ponies",
+              "fullTitle": "Races should display ponies",
+              "timedOut": null,
+              "duration": 260,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/races');\ncy.wait('@getRaces');\ncy.get('figure').should('have.length', 10);\ncy.get('img').should('have.length', 10);\ncy.get('figcaption').should('have.length', 10);",
+              "err": {},
+              "uuid": "f388d9ed-a15a-408e-ae31-4728687f183d",
+              "parentUUID": "b8b587dc-19d3-4052-b256-9dd4c18f04df",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "02c72e78-7e8d-454b-abae-70c6f7575505",
+            "41563fd2-16c5-469f-b3fe-e68627ca5aa1",
+            "f388d9ed-a15a-408e-ae31-4728687f183d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1240,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

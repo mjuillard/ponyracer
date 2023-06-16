@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-06-08T15:41:46.744Z",
+    "end": "2023-06-08T15:41:47.321Z",
+    "duration": 577,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c79f046b-1115-414d-82f6-ed8f68496665",
+      "title": "",
+      "fullFile": "cypress\\e2e\\home.cy.ts",
+      "file": "cypress\\e2e\\home.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "70b3f52e-3272-41c4-b8fd-fb5cbb5c3e71",
+          "title": "Ponyracer",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display title on home page",
+              "fullTitle": "Ponyracer should display title on home page",
+              "timedOut": null,
+              "duration": 239,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.contains('h1', 'Ponyracer');\ncy.contains('small', 'Always a pleasure to bet on ponies');\ncy.get('.btn-primary').contains('Login').should('have.attr', 'href', '/login');\ncy.get('.btn-primary').contains('Register').should('have.attr', 'href', '/register');",
+              "err": {},
+              "uuid": "75651d75-98f2-4868-8452-49a5c97966c2",
+              "parentUUID": "70b3f52e-3272-41c4-b8fd-fb5cbb5c3e71",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display a navbar",
+              "fullTitle": "Ponyracer should display a navbar",
+              "timedOut": null,
+              "duration": 96,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get(navbarBrand).contains('PonyRacer').should('have.attr', 'href', '/');\ncy.get(navbarLink).contains('Races').should('have.attr', 'href', '/races');",
+              "err": {},
+              "uuid": "b86e281a-62b6-4ed0-943b-19212ec24106",
+              "parentUUID": "70b3f52e-3272-41c4-b8fd-fb5cbb5c3e71",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display a navbar collapsed on small screen",
+              "fullTitle": "Ponyracer should display a navbar collapsed on small screen",
+              "timedOut": null,
+              "duration": 209,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport('iphone-6+');\ncy.visit('/');\ncy.contains(navbarBrand, 'PonyRacer');\ncy.get(navbarLink).should('not.be.visible');\n// toggle the navbar\ncy.get('.navbar-toggler').click();\ncy.get(navbarLink).should('be.visible');",
+              "err": {},
+              "uuid": "47253c2c-27e7-4eae-b101-45759718e982",
+              "parentUUID": "70b3f52e-3272-41c4-b8fd-fb5cbb5c3e71",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "75651d75-98f2-4868-8452-49a5c97966c2",
+            "b86e281a-62b6-4ed0-943b-19212ec24106",
+            "47253c2c-27e7-4eae-b101-45759718e982"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 544,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

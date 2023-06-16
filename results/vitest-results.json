@@ -1,0 +1,444 @@
+{
+  "numTotalTestSuites": 22,
+  "numPassedTestSuites": 22,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 30,
+  "numPassedTests": 30,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "startTime": 1686238867048,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "Alert.vue"
+          ],
+          "fullName": " Alert.vue should display the alert content",
+          "status": "passed",
+          "title": "should display the alert content",
+          "duration": 7,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Alert.vue"
+          ],
+          "fullName": " Alert.vue should have the correct CSS classes",
+          "status": "passed",
+          "title": "should have the correct CSS classes",
+          "duration": 14,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Alert.vue"
+          ],
+          "fullName": " Alert.vue should be dismissible",
+          "status": "passed",
+          "title": "should be dismissible",
+          "duration": 72,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1686238870233,
+      "endTime": 1686238870326,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Vue3-formation/ponyracer/src/components/__tests__/Alert.spec.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "Navbar.vue"
+          ],
+          "fullName": " Navbar.vue should toggle the class on click",
+          "status": "passed",
+          "title": "should toggle the class on click",
+          "duration": 17,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Navbar.vue"
+          ],
+          "fullName": " Navbar.vue should display a link to the home page",
+          "status": "passed",
+          "title": "should display a link to the home page",
+          "duration": 6,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Navbar.vue"
+          ],
+          "fullName": " Navbar.vue should display a link to the races page",
+          "status": "passed",
+          "title": "should display a link to the races page",
+          "duration": 30,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1686238876307,
+      "endTime": 1686238876360,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Vue3-formation/ponyracer/src/components/__tests__/Navbar.spec.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "useRaceService"
+          ],
+          "fullName": " useRaceService should list races",
+          "status": "passed",
+          "title": "should list races",
+          "duration": 8,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1686238870125,
+      "endTime": 1686238870133,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Vue3-formation/ponyracer/src/composables/__tests__/RaceService.spec.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "useUserService"
+          ],
+          "fullName": " useUserService should register a user",
+          "status": "passed",
+          "title": "should register a user",
+          "duration": 1,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "useUserService"
+          ],
+          "fullName": " useUserService should authenticate a user",
+          "status": "passed",
+          "title": "should authenticate a user",
+          "duration": 5,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1686238870126,
+      "endTime": 1686238870132,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Vue3-formation/ponyracer/src/composables/__tests__/UserService.spec.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "App.vue"
+          ],
+          "fullName": " App.vue renders the navbar",
+          "status": "passed",
+          "title": "renders the navbar",
+          "duration": 8,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "App.vue"
+          ],
+          "fullName": " App.vue renders the router view inside a Suspense component",
+          "status": "passed",
+          "title": "renders the router view inside a Suspense component",
+          "duration": 18,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "App.vue"
+          ],
+          "fullName": " App.vue renders an error if router view does not load",
+          "status": "passed",
+          "title": "renders an error if router view does not load",
+          "duration": 96,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1686238870608,
+      "endTime": 1686238870731,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Vue3-formation/ponyracer/src/__tests__/App.spec.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "Home.vue"
+          ],
+          "fullName": " Home.vue should display every race name in a title",
+          "status": "passed",
+          "title": "should display every race name in a title",
+          "duration": 17,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Home.vue"
+          ],
+          "fullName": " Home.vue display a link to go the login",
+          "status": "passed",
+          "title": "display a link to go the login",
+          "duration": 8,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Home.vue"
+          ],
+          "fullName": " Home.vue display a link to go the register page",
+          "status": "passed",
+          "title": "display a link to go the register page",
+          "duration": 34,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1686238870181,
+      "endTime": 1686238870240,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Vue3-formation/ponyracer/src/views/__tests__/Home.spec.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "Login.vue"
+          ],
+          "fullName": " Login.vue should display a form",
+          "status": "passed",
+          "title": "should display a form",
+          "duration": 12,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Login.vue"
+          ],
+          "fullName": " Login.vue should display errors for login",
+          "status": "passed",
+          "title": "should display errors for login",
+          "duration": 112,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Login.vue"
+          ],
+          "fullName": " Login.vue should display errors for password",
+          "status": "passed",
+          "title": "should display errors for password",
+          "duration": 19,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Login.vue"
+          ],
+          "fullName": " Login.vue should call the authenticate function on submit",
+          "status": "passed",
+          "title": "should call the authenticate function on submit",
+          "duration": 21,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Login.vue"
+          ],
+          "fullName": " Login.vue should display an alert on submission failure",
+          "status": "passed",
+          "title": "should display an alert on submission failure",
+          "duration": 49,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1686238870649,
+      "endTime": 1686238870862,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Vue3-formation/ponyracer/src/views/__tests__/Login.spec.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "Pony.vue"
+          ],
+          "fullName": " Pony.vue should display an image and a legend",
+          "status": "passed",
+          "title": "should display an image and a legend",
+          "duration": 20,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Pony.vue"
+          ],
+          "fullName": " Pony.vue should emit an event on click",
+          "status": "passed",
+          "title": "should emit an event on click",
+          "duration": 106,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1686238873489,
+      "endTime": 1686238873616,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Vue3-formation/ponyracer/src/views/__tests__/Pony.spec.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "Race.vue"
+          ],
+          "fullName": " Race.vue should display a race name and its ponies",
+          "status": "passed",
+          "title": "should display a race name and its ponies",
+          "duration": 70,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1686238874343,
+      "endTime": 1686238874413,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Vue3-formation/ponyracer/src/views/__tests__/Race.spec.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "Races.vue"
+          ],
+          "fullName": " Races.vue should display every race name in a title",
+          "status": "passed",
+          "title": "should display every race name in a title",
+          "duration": 49,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1686238871276,
+      "endTime": 1686238871325,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Vue3-formation/ponyracer/src/views/__tests__/Races.spec.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "Register.vue"
+          ],
+          "fullName": " Register.vue should display a form",
+          "status": "passed",
+          "title": "should display a form",
+          "duration": 26,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Register.vue"
+          ],
+          "fullName": " Register.vue should display errors for login",
+          "status": "passed",
+          "title": "should display errors for login",
+          "duration": 79,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Register.vue"
+          ],
+          "fullName": " Register.vue should display errors for password",
+          "status": "passed",
+          "title": "should display errors for password",
+          "duration": 210,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Register.vue"
+          ],
+          "fullName": " Register.vue should display errors for birthYear",
+          "status": "passed",
+          "title": "should display errors for birthYear",
+          "duration": 54,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Register.vue"
+          ],
+          "fullName": " Register.vue should call the register function on submit",
+          "status": "passed",
+          "title": "should call the register function on submit",
+          "duration": 66,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Register.vue"
+          ],
+          "fullName": " Register.vue should display an alert on submission failure",
+          "status": "passed",
+          "title": "should display an alert on submission failure",
+          "duration": 94,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1686238873178,
+      "endTime": 1686238873708,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Vue3-formation/ponyracer/src/views/__tests__/Register.spec.ts"
+    }
+  ]
+}
